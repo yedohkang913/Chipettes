@@ -6,6 +6,13 @@
 
     Draft a prioritized list of deque methods you plan to implement.
     You need not implement every method. (Which are most crucial? Which are most easily implemented?)
+    - E removeFirst(e)
+    - E removeLast(e)
+    - int size()
+    - E getFirst()
+    - E getLast()
+    - void addFirst(e)
+    - void addLast(e)
 
     Write your own local Deque interface.
 
