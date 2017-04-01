@@ -5,10 +5,10 @@ public interface Deque<T>{
     
     public T removeFirst();
     public T removeLast();
-    
-    public int size();
-    
+        
     public T getFirst();
     public T getLast();
+    
+    public int size();
     
 }
