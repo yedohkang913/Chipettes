@@ -6,6 +6,7 @@
 import java.util.NoSuchElementException;
 public class DDeque<T> implements Deque<T>{
 
+    //instance variables, in which doubly-linked nodes were used
     private int _size;
     private DLLNode<T> _head;
     private DLLNode<T> _tail;
