@@ -3,6 +3,8 @@
 // LAB02 -- All Hands on Deque!
 // 2017-04-04
 
+import java.util.NoSuchElementException;
+
 public class DDeque<T> implements Deque<T>{
 
     private int _size;
