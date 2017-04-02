@@ -1,7 +1,7 @@
 //Chipettes (Yedoh Kang, Vernita Lawren, Kristin Lin)
 //APCS2 pd1
 //LAB02 -- All Hands on Deque! (Not Schenectady; rather, synecdoche.)
-//2017-04-02
+//2017-04-04
 
 import java.util.NoSuchElementException;
 public class DDeque<T> implements Deque<T>{
@@ -129,6 +129,7 @@ public class DDeque<T> implements Deque<T>{
     //main method for testing
     public static void main( String[] args ) 
     {
+	/*~~~~~~~~~~~~~~~m~o~v~e~~m~e~~d~o~w~n~~~~~~~~~~~~~~
 	DDeque<String> james = new DDeque<String>();
 
 	System.out.println("initially: " );
@@ -164,8 +165,7 @@ public class DDeque<T> implements Deque<T>{
 
 	System.out.println( "...after removefirst: " + james.removeFirst() );
 	System.out.println( james + "\tsize: " + james.size() );
-	/*~~~~~~~~~~~~~~~m~o~v~e~~m~e~~d~o~w~n~~~~~~~~~~~~~~
-	  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
     }
 
 
