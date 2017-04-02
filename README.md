@@ -19,5 +19,4 @@ Having doubly-linked nodes will allow for efficient enqueueing and dequeueing fr
 
 #### RATIONALE FOR METHOD SELECTIONS
 
-*will put later
-
+We had to choose between add and offer methods, remove and poll methods, and get and peek methods. We chose to use add, remove, and get because they return void and throw exceptions. To stay consistent with previous assignments, our methods throw an exception when empty.
