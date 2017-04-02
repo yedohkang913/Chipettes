@@ -1,8 +1,8 @@
 # Chipettes
-###### APCS2 pd 1 
-###### Yedoh Kang, Vernita Lawren, Kristin Lin
-###### Lab #02 - All Hands on Deque!
-###### 2017-04-04
+**APCS2 pd 1**       
+**Yedoh Kang, Vernita Lawren, Kristin Lin**      
+**Lab #02 - All Hands on Deque!**     
+**2017-04-04**      
 
 #### LIST OF DEQUE METHODS: 
     - void addFirst(e)
