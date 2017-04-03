@@ -32,7 +32,7 @@ public class DDeque<T> implements Deque<T>{
 	    _head.getNext().setPrev(_head); 
 	}
         _size++; //increase size
-    }
+    } // O(1)
     
     //adds node to the end
     public void addLast(T deqVal) {
@@ -49,7 +49,7 @@ public class DDeque<T> implements Deque<T>{
 	    _tail.getPrev().setNext(_tail);
 	}
 	_size++; //increase size
-    }
+    } // O(1)
     
     //removes node from the front
     public T removeFirst() {
@@ -66,7 +66,7 @@ public class DDeque<T> implements Deque<T>{
         }
         _size--; //decrease _size
         return retVal;
-    }
+    } // O(1)
 
     //removes node from the end
     public T removeLast() {
@@ -83,12 +83,12 @@ public class DDeque<T> implements Deque<T>{
 	}
 	_size--; //decrease size
 	return retVal;
-    }
+    } //O(1)
     
     //accessor for _size variable
     public int size() {
         return _size;
-    }
+    } // O(1)
     
     //returns first node
     public T getFirst() {
@@ -100,7 +100,7 @@ public class DDeque<T> implements Deque<T>{
 	else {
 	    return _head.getCargo();
         }
-    }
+    } // O(1)
 
     //return last node
     public T getLast() {
@@ -112,7 +112,7 @@ public class DDeque<T> implements Deque<T>{
 	else {
             return _tail.getCargo();
         }
-    }
+    } // O(1)
 
 
     //overwritten toString
@@ -125,7 +125,7 @@ public class DDeque<T> implements Deque<T>{
         }
         retStr += "NULL";
         return retStr;
-    }
+    } // O(n)
     
     //main method for testing
     public static void main( String[] args ) 
