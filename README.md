@@ -12,6 +12,7 @@
     - E removeLast(e)
     - E getLast()
     - int size()
+    - boolean contains(e)
 
 #### RATIONALE FOR METHOD SELECTIONS
 
