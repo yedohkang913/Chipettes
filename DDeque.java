@@ -92,7 +92,7 @@ public class DDeque<T> implements Deque<T>{
 	    if (temp.getCargo().equals(deqVal)) {
 		return true;
 	    }
-		temp = temp.getNext();
+            temp = temp.getNext();
 	}
 	return false;
     } // O(n)
