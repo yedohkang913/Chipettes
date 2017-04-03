@@ -5,11 +5,14 @@ public interface Deque<T>{
     
     public T removeFirst();
     public T removeLast();
+    
+    public boolean contains (T deqVal);
+    
+    public boolean removeFirstOccurrence (T deqVal);
+    public boolean removeLastOccurrence (T deqVal);
         
     public T getFirst();
     public T getLast();
-    
-    public boolean contains (T deqVal);
     
     public int size();
     
