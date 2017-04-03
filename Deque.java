@@ -9,6 +9,8 @@ public interface Deque<T>{
     public T getFirst();
     public T getLast();
     
+    public boolean contains (T deqVal);
+    
     public int size();
     
 }
