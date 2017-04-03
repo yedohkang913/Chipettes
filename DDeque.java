@@ -85,6 +85,17 @@ public class DDeque<T> implements Deque<T>{
 	return retVal;
     } //O(1)
     
+    //checks if deque contains given element
+    public boolean contains (T deqVal) {
+	DLLNode<T> temp = _head;
+	while (temp != null) {
+	    if (temp.getCargo().equals(deqVal)) {
+		return true;
+	    }
+	}
+	return false;
+    } // O(n)
+
     //accessor for _size variable
     public int size() {
         return _size;
