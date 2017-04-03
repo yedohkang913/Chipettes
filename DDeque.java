@@ -160,7 +160,9 @@ public class DDeque<T> implements Deque<T>{
 	System.out.println( james + "\tsize: " + james.size() );
 
 	System.out.println( "First item is: " + james.getFirst() );
-
+	
+	System.out.println( james + "\tcontains: I? " + james.contains("I");
+	System.out.println( james + "\tcontains: hello? " + james.contains("I");
 	
 	james.addFirst("wait");
 	System.out.println( "...and now first item is: " + james.getFirst());
