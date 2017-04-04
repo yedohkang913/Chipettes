@@ -190,7 +190,6 @@ public class DDeque<T> implements Deque<T>{
     //main method for testing
     public static void main( String[] args ) 
     {
-	/*~~~~~~~~~~~~~~~m~o~v~e~~m~e~~d~o~w~n~~~~~~~~~~~~~~
 	DDeque<String> james = new DDeque<String>();
 
 	System.out.println("initially: " );
@@ -209,12 +208,20 @@ public class DDeque<T> implements Deque<T>{
 	System.out.println( james + "\tsize: " + james.size() );
 
 	System.out.println( "First item is: " + james.getFirst() );
-	
-	System.out.println( james + "\tcontains: I? " + james.contains("I");
-	System.out.println( james + "\tcontains: hello? " + james.contains("hello");
-	
+
+	System.out.println("");	
+
+	System.out.println( james + "\tcontains: I? " + james.contains("I"));
+	System.out.println( james + "\tcontains: hello? " + james.contains("hello"));
+	james.addLast("need");
+	james.addLast("a");
+	System.out.println( "\nTwo instances of 'need' and 'a': \n" + james );
+
+	System.out.println ( "Remove first occurrence of 'need': " + james.removeFirstOccurrence("need") + "\n" + james );
+	System.out.println ( "Remove last occurrence of 'a': " + james.removeLastOccurrence("a") + "\n" + james );
+
 	james.addFirst("wait");
-	System.out.println( "...and now first item is: " + james.getFirst());
+	System.out.println( "\n...and now first item is: " + james.getFirst());
 	System.out.println( james + "\tsize: " + james.size() );
 
 	System.out.println( "...after remove last: " + james.removeLast() );
@@ -228,7 +235,7 @@ public class DDeque<T> implements Deque<T>{
 
 	System.out.println( "...after removefirst: " + james.removeFirst() );
 	System.out.println( james + "\tsize: " + james.size() );
-	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
     }
 
 
