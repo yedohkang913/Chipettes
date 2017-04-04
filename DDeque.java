@@ -119,7 +119,7 @@ public class DDeque<T> implements Deque<T>{
 	    temp = temp.getNext(); //if value is not encountered, move to next node
 	}
 	return false; //after traversal and value is not present, return false
-    } // O(1)
+    } // O(n)
     
     //removes last occurance of specified element
     public boolean removeLastOccurrence (T deqVal) {
@@ -141,7 +141,7 @@ public class DDeque<T> implements Deque<T>{
 	    temp = temp.getPrev(); //if value is not encountered, move to previous node
 	}
 	return false; //after traversal and value is not present, return false
-    } // O(1)
+    } // O(n)
 
     //accessor for _size variable
     public int size() {
@@ -209,7 +209,7 @@ public class DDeque<T> implements Deque<T>{
 	System.out.println( "First item is: " + james.getFirst() );
 	
 	System.out.println( james + "\tcontains: I? " + james.contains("I");
-	System.out.println( james + "\tcontains: hello? " + james.contains("I");
+	System.out.println( james + "\tcontains: hello? " + james.contains("hello");
 	
 	james.addFirst("wait");
 	System.out.println( "...and now first item is: " + james.getFirst());
