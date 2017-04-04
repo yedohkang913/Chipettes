@@ -97,6 +97,52 @@ public class DDeque<T> implements Deque<T>{
 	return false;
     } // O(n)
 
+    //removes first occurance of specified element
+    public boolean removeFirstOccurrence (T deqVal) {
+	DLLNode<T> temp = _head; //create dummy node that traverses from left to right
+	while (temp != null){
+	    if (temp.getCargo().equals(deqVal)) { //if value is present
+		if (temp == _head) {
+		    removeFirst(); //or the front, removeFirst()
+		}
+		else if (temp == _tail) {
+		    removeLast(); //and it’s at the end, removeLast()
+		}
+		else { 
+		    //otherwise, link nodes in front and behind dummy node to remove
+		    temp.getPrev().setNext(temp.getNext());
+		    temp.getNext().setPrev(temp.getPrev());
+		}
+		_size--; //decrease _size
+		return true;
+	    }
+	    temp = temp.getNext(); //if value is not encountered, move to next node
+	}
+	return false; //after traversal and value is not present, return false
+    } // O(1)
+    
+    //removes last occurance of specified element
+    public boolean removeLastOccurrence (T deqVal) {
+	DLLNode<T> temp = _tail; //create dummy node that traverses from right to left
+	while (temp != null) {
+	    if (temp.getCargo().equals(deqVal)) { //if value is present, 
+		if (temp == _tail) {
+                  removeLast(); //and it’s at the end, removeLast()
+		} else if (temp == _head) {
+		    removeFirst(); //or the front, removeFirst()
+		} else { 
+		    //otherwise, link nodes in front and behind dummy node to remove
+		    temp.getPrev().setNext(temp.getNext());
+		    temp.getNext().setPrev(temp.getPrev());
+		}
+		_size--; //housekeeping
+		return true;
+	    }
+	    temp = temp.getPrev(); //if value is not encountered, move to previous node
+	}
+	return false; //after traversal and value is not present, return false
+    } // O(1)
+
     //accessor for _size variable
     public int size() {
         return _size;
