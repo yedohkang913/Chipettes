@@ -112,8 +112,8 @@ public class DDeque<T> implements Deque<T>{
 		    //otherwise, link nodes in front and behind dummy node to remove
 		    temp.getPrev().setNext(temp.getNext());
 		    temp.getNext().setPrev(temp.getPrev());
+		    _size--; //decrease _size
 		}
-		_size--; //decrease _size
 		return true;
 	    }
 	    temp = temp.getNext(); //if value is not encountered, move to next node
@@ -136,8 +136,8 @@ public class DDeque<T> implements Deque<T>{
 		    //otherwise, link nodes in front and behind dummy node to remove
 		    temp.getPrev().setNext(temp.getNext());
 		    temp.getNext().setPrev(temp.getPrev());
+	            _size--; //housekeeping
 		}
-		_size--; //housekeeping
 		return true;
 	    }
 	    temp = temp.getPrev(); //if value is not encountered, move to previous node
