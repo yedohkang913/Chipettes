@@ -128,9 +128,11 @@ public class DDeque<T> implements Deque<T>{
 	    if (temp.getCargo().equals(deqVal)) { //if value is present, 
 		if (temp == _tail) {
                   removeLast(); //and it’s at the end, removeLast()
-		} else if (temp == _head) {
+		}
+		else if (temp == _head) {
 		    removeFirst(); //or the front, removeFirst()
-		} else { 
+		}
+		else { 
 		    //otherwise, link nodes in front and behind dummy node to remove
 		    temp.getPrev().setNext(temp.getNext());
 		    temp.getNext().setPrev(temp.getPrev());
