@@ -18,7 +18,7 @@
 
 #### RATIONALE FOR METHOD SELECTIONS
 
-We had to choose between add and offer methods, remove and poll methods, and get and peek methods. We chose to use add, remove, and get because they return void and throw exceptions. To stay consistent with previous assignments, our methods throw an exception when empty. In addition, we added the contains method so that the user can see if an element is contained in the deque without removing every single element to check. 
+We had to choose between add and offer methods, remove and poll methods, and get and peek methods. We chose to use add, remove, and get because they return void and throw exceptions. To stay consistent with previous assignments, our methods throw an exception when empty. In addition, we added the contains method so that the user can see if an element is contained in the deque without removing every single element to check. We also thought removeFO and removeLO would be useful in instances where the user wants to remove the first or last element of repeats. 
 
 #### RATIONALE FOR DOUBLY-LINKED NODE-BASED ARCHITECTURE
 
