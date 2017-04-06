@@ -31,12 +31,12 @@ Having doubly-linked nodes will allow for efficient enqueueing and dequeueing fr
 
 ##### Code review input:
 
-Add comments to interface
-Add runtimes for each method on README (not just enqueue and dequeue)
-Needs to throw more exceptions
+- Add comments to interface
+- Add runtimes for each method on README (not just enqueue and dequeue)
+- Needs to throw more exceptions
 
 ##### Changes made in response to code review input
 
-Added comments describing methods chosen in the interface
-Runtimes were added to methods and organized into a table on README
-No exceptions were added because we already had exceptions thrown for methods that needed them. Also, the driver file was successfully tested, and to run it fully, we commented out the lines where it threw an exception, and uncommented the test cases for the contains method.
+- Added comments describing methods chosen in the interface
+- Runtimes were added to methods and organized into a table on README
+- No exceptions were added because we already had exceptions thrown for methods that needed them. Also, the driver file was successfully tested, and to run it fully, we commented out the lines where it threw an exception, and uncommented the test cases for the contains method.
