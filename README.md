@@ -1,8 +1,7 @@
 # Chipettes
 **APCS2 pd 1**       
 **Yedoh Kang, Vernita Lawren, Kristin Lin**      
-**Lab #02 - All Hands on Deque! (Not Schenectady; rather, synecdoche.)**     
-**2017-04-04**      
+**Lab #02 - All Hands on Deque! (Not Schenectady; rather, synecdoche.)**          
 
 #### LIST OF DEQUE METHODS: 
 
