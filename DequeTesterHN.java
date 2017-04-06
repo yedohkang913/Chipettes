@@ -31,14 +31,14 @@ public class DequeTesterHN{
 	System.out.println(test);
 	System.out.println("size = " + test.size());
 
-	// System.out.println("\nTesting contains()...");
-	// System.out.println(test.contains("one"));
-	// System.out.println(test.contains("two"));
-	// System.out.println(test.contains("three"));
-	// System.out.println(test.contains("four"));
-	// System.out.println(test.contains("five"));
-	// //"six" does not exist
-	// System.out.println(test.contains("six" + "- 'six' was never inserted"));
+	System.out.println("\nTesting contains()...");
+	System.out.println(test.contains("one"));
+	System.out.println(test.contains("two"));
+	System.out.println(test.contains("three"));
+	System.out.println(test.contains("four"));
+	System.out.println(test.contains("five"));
+	//"six" does not exist
+	System.out.println(test.contains("six" + "- 'six' was never inserted"));
 
 	System.out.println("\nTesting removeFirst()...");
 	//removes elements one by one
@@ -69,13 +69,13 @@ public class DequeTesterHN{
 	//elements are backwards, as they were added to the front (stacky?)
 	System.out.println("size = " + test2.size());
 
-	// System.out.println("\nTesting contains()...");
-	// System.out.println(test2.contains("one"));
-	// System.out.println(test2.contains("two"));
-	// System.out.println(test2.contains("three"));
-	// System.out.println(test2.contains("four"));
-	// System.out.println(test2.contains("five"));
-	// System.out.println(test2.contains("six") + "-never inserted 'six'");
+	System.out.println("\nTesting contains()...");
+	System.out.println(test2.contains("one"));
+	System.out.println(test2.contains("two"));
+	System.out.println(test2.contains("three"));
+	System.out.println(test2.contains("four"));
+	System.out.println(test2.contains("five"));
+	System.out.println(test2.contains("six") + "-never inserted 'six'");
 
 	System.out.println("\nTesting removeLast()...");
 	//"last" elements were actually the first to be inserted
@@ -84,7 +84,7 @@ public class DequeTesterHN{
 	System.out.println(test2.removeLast());
 	System.out.println(test2.removeLast());
 	System.out.println(test2.removeLast());
-	System.out.println(test2.removeLast() + "-list empty");
+	//System.out.println(test2.removeLast() + "-list empty");
 
 	 //tests removeFirstOccurrence() and removeLastOccurrence()
 	 DDeque<String> test3 = new DDeque<String>();
