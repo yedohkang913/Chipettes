@@ -5,16 +5,19 @@
 **2017-04-04**      
 
 #### LIST OF DEQUE METHODS: 
-    - void addFirst(e)
-    - E removeFirst(e)
-    - E getFirst()
-    - void addLast(e)
-    - E removeLast(e)
-    - E getLast()
-    - int size()
-    - boolean contains(e)
-    - boolean removeFirstOccurrence(e)
-    - boolean removeLastOccurrence(e)
+
+ Method | Runtime 
+ --- | --- 
+ void addFirst(e) | O(1) 
+ E removeFirst(e) | O(1) 
+ E getFirst() | O(1) 
+ void addLast(e) | O(1) 
+ E removeLast(e) | O(1) 
+ E getLast() | O(1) 
+ int size() | O(1) 
+ boolean contains(e) | O(n) 
+ boolean removeFirstOccurrence(e) | O(n) 
+ boolean removeLastOccurrence(e) | O(n) 
 
 #### RATIONALE FOR METHOD SELECTIONS
 
