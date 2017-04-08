@@ -51,7 +51,7 @@ public class DequeTester2{
 	System.out.println("get the first/last bonus?");
 	//test one, then the other, then both
 	System.out.println(deque.removeFirstOccurrence("BONUS!"));
-	//System.out.println(deque.removeLastOccurrence("BONUS!"));
+	System.out.println(deque.removeLastOccurrence("BONUS!"));
 
 	//String should look like "3 2 1 4 5 6"
 	System.out.println( deque );
